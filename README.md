@@ -1,45 +1,64 @@
-# Ride-Hailing Application - UML Use Case Diagram
+# Ride-Hailing Use Case System
 
-This repository contains the UML Use Case Diagram for a ride-hailing application. The diagram illustrates the interactions between the key actors (Passenger, Driver, and Admin) and the system, along with the core functionalities supported by the application.
+## Overview
+This system is designed to manage the core functionalities of a **ride-hailing platform**, involving main actors: **Customer Support**, **Driver**, and **Admin**. It aims to streamline ride requests, customer and driver interactions, and administrative tasks, ensuring efficient operation.
 
-## System Overview
+---
 
-The ride-hailing application allows passengers to book rides, drivers to manage ride requests, and administrators to oversee system operations.
+## Key Actors
+1. **Customer Support**  
+   - Handles customer requests and manages ride negotiations.  
+   - Ensures seamless processing of rides and complaints.
 
-## Actors and Their Responsibilities
+2. **Driver**  
+   - Responsible for accepting ride requests and completing rides.  
+   - Manages payment collection and provides ride services.
 
-### 1. **Passenger**
-   - **Request Ride**: Passenger requests a ride through the app.
-   - **Cancel Ride**: Passenger can cancel a requested ride before it starts.
-   - **Pay Fare**: Passenger pays for the completed ride.
+3. **Admin**  
+   - Manages the overall platform, including customer and driver records.  
+   - Handles ride approvals, disputes, and financial calculations like commissions.
 
-### 2. **Driver**
-   - **Accept Ride**: Driver accepts a ride request.
-   - **Reject Ride**: Driver can reject a ride request.
-   - **Start Trip**: Driver starts the ride after passenger pickup.
-   - **End Trip**: Driver completes the trip after dropping off the passenger.
+4. **Customer**  
+   - Initiates ride requests and negotiates pricing.  
+   - Completes payments and provides feedback.
 
-### 3. **Admin**
-   - **Manage Accounts**: Admin manages passenger and driver accounts.
-   - **View Reports**: Admin views reports on system usage and performance.
+---
 
-## Use Cases
+## Core Functionalities
+### Customer Support:
+- **Close Negotiations**: Finalizes ride agreements between customers and drivers.  
+- **Process Complaints**: Handles complaints and resolves issues.  
+- **Verify Ride Details**: Confirms details of upcoming rides.  
+- **Customer Management**: Tracks and updates customer profiles.
 
-### Passenger Use Cases:
-1. **Request Ride**: Passenger initiates a ride request, which is sent to nearby drivers.
-2. **Cancel Ride**: Passenger can cancel a ride if plans change.
-3. **Pay Fare**: Payment is processed after the trip ends.
+---
 
-### Driver Use Cases:
-1. **Accept Ride**: Driver chooses to accept a ride request.
-2. **Reject Ride**: Driver declines a ride request.
-3. **Start Trip**: Trip begins after the driver picks up the passenger.
-4. **End Trip**: Trip is marked as completed when the passenger is dropped off.
+### Driver:
+- **Accept Ride Requests**: Approves or rejects rides.  
+- **Complete Rides**: Completes rides and collects payments.  
+- **Billing**: Manages billing and provides payment confirmations.  
 
-### Admin Use Cases:
-1. **Manage Accounts**: Add, update, or delete accounts of users and drivers.
-2. **View Reports**: Monitor application usage, financial transactions, and driver activity.
+---
 
+### Admin:
+- **Ride Requests**: Reviews and approves ride requests from customers.  
+- **Customer/Driver Management**: Adds, removes, and updates records.  
+- **Commission Calculation**: Calculates commissions based on rides completed.  
 
+---
 
+### Customer:
+- **Request Rides**: Initiates ride requests.  
+- **Payment Gateway**: Completes payments for rides via secure methods.  
+- **Use Promo Codes**: Applies promotional codes for discounts.  
 
+---
+
+## Diagram Explanation
+The provided **Use Case Diagram** visually represents the interactions between actors and the system's main functionalities:
+- The **Customer Support** team oversees ride negotiations, ensuring all details are finalized.
+- The **Driver** interacts directly with customers and processes rides.  
+- The **Admin** manages high-level platform operations.  
+- The **Customer** uses the platform to request rides, pay, and provide feedback.
+
+---
